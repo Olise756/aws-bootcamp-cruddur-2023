@@ -4,8 +4,8 @@
 
 ### Logical Diagram
 
-With the help of lucidchart and video instuctions I was able to create a logical diagram of AWS tecnhology and services
+With the help of lucidchart and video instuctions I was able to create a logical diagram of AWS tecnhologies and services:
 
-![Lucid Chart](assets/logical diagram.JPG)
+![lucid Chart](assets/logical%20diagram%20(2).png)
 
 ## Required Homework
