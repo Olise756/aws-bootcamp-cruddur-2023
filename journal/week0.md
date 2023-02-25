@@ -11,4 +11,6 @@ With the help of lucidchart and video instuctions I was able to create a logical
 ## Required Homework
 
 ### Creating AWS Budget
-![Budjet](assets/Budgets.JPG)
+
+I created my personal budget plan with the help of **Chirag's video instructions**. I didn't do a second budget plan via CLI due to financial reasons 
+![Budget](assets/Budgets.JPG)
