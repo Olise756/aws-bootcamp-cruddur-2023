@@ -15,4 +15,4 @@ I created my personal budget plan with the help of **Chirag's video instructions
 ![Budget](assets/Budgets.JPG)
 
 
-## Homework Homework
+## Homework Challenges
