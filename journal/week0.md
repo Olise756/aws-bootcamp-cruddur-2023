@@ -6,6 +6,6 @@
 
 With the help of lucidchart and video instuctions I was able to create a logical diagram of AWS tecnhology and services
 
-**Isert Image**
+![Lucid Chart](assets/logical diagram.JPG)
 
-## Rquired Homework
+## Required Homework
