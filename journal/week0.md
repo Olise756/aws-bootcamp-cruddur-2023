@@ -9,3 +9,6 @@ With the help of lucidchart and video instuctions I was able to create a logical
 ![lucid Chart](assets/logical%20diagram%20(2).png)
 
 ## Required Homework
+
+### Creating AWS Budget
+![Budjet](assets/Budgets.JPG)
