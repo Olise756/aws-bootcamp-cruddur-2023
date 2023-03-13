@@ -90,9 +90,7 @@ To put span around home-activities endpoint to show return of hard-coded data to
 - Add `span = trace.get_current_span()` below the above code and make sure the block is well indented.
 - Add attributes to the span:
     - add the line `span.set_attribute("app.result_length", len(results))` at the buttom of **home_activities.py**, just before the return line.
-![trace result](../_docs/assets/span-attribute.png)
-![heatmap](../_docs/assets/heatmap-honeycomb.png)
-
+    
 ## Instrument XRay
 "Analyze and debug production and distributed applications. AWS X-Ray provides a complete view of requests as they travel through your application and filters visual data across payloads, functions, traces, services, APIs, and more with no-code and low-code motions." 
 [AWS XRay python SDK](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html)
@@ -157,8 +155,7 @@ To put span around home-activities endpoint to show return of hard-coded data to
 ```
 - #AWS_XRAY_URL is a dynamic naming that we passed in **app.py**
 - start docker compose and view xray container log, you should see this in your terminal
-![XRay log](../_docs/assets/xray-log.png)
-![XRay console log](../_docs/assets/xray-console.png)
+
 
 # CloudWatch Log
 A tightly integrated, log management service built by into and by AWS. "While watchtower is a lightweight adapter between the Python logging system and CloudWatch Logs." It lets you easily plug your app into cloudwatch.
@@ -262,4 +259,4 @@ def after_request(response):
 - Run your docker compose and visit the **backend** endpoint */rollbar/test*
 - You will see *'Hello world'* message
 - go to your rollbar account page and click to continue, then click item and you should see logs
-![rollbar log](../_docs/assets/rollbar.png)
+
