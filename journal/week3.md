@@ -46,7 +46,7 @@ Amplify.configure({
   }
 });
 ```
-### proceeded in configuring and updating profile, signin, signup confirmation and recovery pages
+### proceeded in configuring debugging and updating the rofile, signin, signup confirmation and recovery pages
 
 ![Signin_error](assets/error%20respose.JPG)
 
