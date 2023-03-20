@@ -20,12 +20,15 @@ Authentication is establishing that you are who you say you are.
 
 ![Cognito_Account](assets/cruddurpool.png)
 
-#Install AWS Amplify
+# Install AWS Amplify
 To install amplify, navigate into the frontend directory and put this in
 ```
 npm i aws-amplify --save
 ```
+#Configure Amplipfy
 
+Configured amplify by adding this code in App.js
+```
 import { Amplify } from 'aws-amplify';
 
 Amplify.configure({
@@ -42,3 +45,4 @@ Amplify.configure({
     userPoolWebClientId: process.env.REACT_APP_CLIENT_ID,   // OPTIONAL - Amazon Cognito Web Client ID (26-char alphanumeric string)
   }
 });
+```
