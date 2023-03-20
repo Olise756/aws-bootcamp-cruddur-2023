@@ -25,7 +25,7 @@ To install amplify, navigate into the frontend directory and put this in
 ```
 npm i aws-amplify --save
 ```
-#Configure Amplipfy
+# Configure Amplipfy
 
 Configured amplify by adding this code in App.js
 ```
@@ -46,3 +46,13 @@ Amplify.configure({
   }
 });
 ```
+### proceeded in configuring and updating profile, signin, signup confirmation and recovery pages
+
+![Signin_error](assets/error%20respose.JPG)
+
+![Signin_error](assets/cruddur%20sig%20im.png)
+
+![Signin_error](assets/confirmation.png)
+
+![Signin_error](assets/preffered.png)
+
