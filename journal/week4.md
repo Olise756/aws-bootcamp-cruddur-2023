@@ -44,18 +44,18 @@ pip install -r requirements.txt
 **to connect to PROD environment, navigate to the backend-flask and input./bin/db-connect prod**
 
 
-#Setup Cognito post confirmation lambda
+# Setup Cognito post confirmation lambda
 Create the handler function
 Create lambda in same vpc as rds instance Python 3.8
 Add a layer for psycopg2 with one of the below methods for development or production
 ENV variables needed for the lambda environment.
-
+```
 PG_HOSTNAME='cruddur-db-instance.czz1cuvepklc.us-east-1.rds.amazonaws.com'
 PG_DATABASE='cruddur'
 PG_USERNAME='root'
 PG_PASSWORD='huEE33z2Qvl383'
 The function
-
+```
 ```
 import json
 import psycopg2
@@ -116,6 +116,7 @@ fi
 psql $URL
 ```
 
+# SQL
 ### `./bin/db-create` to create a new table 'cruddur'
 ```
 #!  /usr/bin/bash
@@ -186,3 +187,18 @@ fi
 psql $URL cruddur < $seed_path
 
 ```
+# Database Display and posting with the crud Button
+
+I ran the following command to confirm connection to postgres database:
+
+```
+./bin/db-schema-load prod
+./bin/db-seed prod
+./bin/db-connect prod
+SELECT * From activities;
+```
+
+And displayed all my users:
+
+```sql
+select * from activites;
