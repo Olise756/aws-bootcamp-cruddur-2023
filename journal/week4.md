@@ -25,7 +25,7 @@ aws rds create-db-instance \
   --no-deletion-protection
 ```
 ![RDS](assets/RDS_prov.png)
-![activities](journal/assets/RDS.png)
+![activities](assets/RDS.png)
 
 #Postgres
 To be able to connect to the posgres database database, we had to install a driver for postgres by inserting this command in **requirements.txt** file 
@@ -199,7 +199,7 @@ I ran the following command to confirm connection to postgres database:
 ./bin/db-connect prod
 SELECT * From activities;
 ```
-![activities](assets/assets/sql%20user.png)
+![activities](assets/sql%20user.png)
 
 ### And was able to create activites by posting with the crudder button###
 
