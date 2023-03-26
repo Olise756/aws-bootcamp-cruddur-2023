@@ -24,6 +24,8 @@ aws rds create-db-instance \
   --performance-insights-retention-period 7 \
   --no-deletion-protection
 ```
+![RDS](assets/RDS_prov.png)
+![activities](journal/assets/RDS.png)
 
 #Postgres
 To be able to connect to the posgres database database, we had to install a driver for postgres by inserting this command in **requirements.txt** file 
@@ -103,6 +105,7 @@ def lambda_handler(event, context):
           print('Database connection closed.')
     return event
 ```
+# SQL
 ### `./bin/db-connect` to connect to the psql 
 ```
 #! /usr/bin/bash
@@ -116,7 +119,6 @@ fi
 psql $URL
 ```
 
-# SQL
 ### `./bin/db-create` to create a new table 'cruddur'
 ```
 #!  /usr/bin/bash
@@ -143,7 +145,7 @@ NO_DB_CONNECTION_URL=$(sed 's/\/cruddur//g' <<< "$CONNECTION_URL")
 psql $NO_DB_CONNECTION_URL -c "drop database cruddur;"
 ```
 
-### `./bin/db-schem-load` to load the schema , which means to give the contents and set its' constraints.
+### `./bin/db-schema-load` to load the schema , which means to give the contents and set its' constraints.
 ```
 #! /usr/bin/bash
 
@@ -197,8 +199,8 @@ I ran the following command to confirm connection to postgres database:
 ./bin/db-connect prod
 SELECT * From activities;
 ```
+![activities](assets/assets/sql%20user.png)
 
-And displayed all my users:
+### And was able to create activites by posting with the crudder button###
 
-```sql
-select * from activites;
+![post](assets/cud%20button.png)
