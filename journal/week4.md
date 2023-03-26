@@ -41,6 +41,8 @@ pip install -r requirements.txt
     environment:
       CONNECTION_URL: "${PROD_CONNECTION_URL}"
 ```
+**to connect to PROD environment, navigate to the backend-flask and input./bin/db-connect prod**
+
 
 #Setup Cognito post confirmation lambda
 Create the handler function
